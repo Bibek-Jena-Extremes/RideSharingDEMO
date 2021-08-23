@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.eztruck.eztruckcustomer">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.eztruck.eztruckcustomer.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.eztruck.eztruckcustomer.ActivityUtil.ListOfCity" />
+        <activity android:name="com.eztruck.eztruckcustomer.ActivityUtil.AddBilling" />
+        <activity android:name="com.eztruck.eztruckcustomer.ActivityUtil.TrackRider" />
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.Base"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.eztruck.eztruckcustomer.FragmentUtil.HomeFragment"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eztruck.eztruckcustomer.FragmentUtil.ListOfOrder"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.History"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.RideDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.OnBoarding"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eztruck.eztruckcustomer.FragmentUtil.OnBoardFragment"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.UserProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.PictureUploader"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.ForgotPassword"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.Chatting"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.FromLocationSelector"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.eztruck.eztruckcustomer.ActivityUtil.Setting"
+            android:screenOrientation="portrait" />
+
+
+    <!--    <activity
+            android:name=".ActivityUtil.CustomNotificationOpener"
+            android:screenOrientation="portrait" />-->
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+        <!--
+             A receiver that will receive media buttons and send as
+            intents to your MediaBrowserServiceCompat implementation.
+            Required on pre-Lollipop. More information at <data android:scheme="content" />  <data android:mimeType="application/pdf" />
+            http://developer.android.com/reference/android/support/v4/media/session/MediaButtonReceiver.html
+        -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <!--<meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver android:name="androidx.media.session.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.eztruck.eztruckcustomer.ServiceUtil.MyIntentService"
+            android:exported="false" />
+        <service
+            android:name="com.eztruck.eztruckcustomer.ServiceUtil.OreoIntentService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" /> <!-- used for drawing widget. This permission must be granted before calling AudioWidget.show(). -->
+    <uses-feature
+        android:name="android.software.live_wallpaper"
+        android:required="true" /> <!-- used for notifing userObject that he is about to remove widget when he drags it on remove widget icon. -->
+    <!-- This permission granted by default on Android 6.0+ devices. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+</manifest>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "184394032781",
+    "project_id": "eztruckapp",
+    "storage_bucket": "eztruckapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184394032781:android:69f87993f24e018175e4c4",
+        "android_client_info": {
+          "package_name": "com.eztruck.eztruckcustomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184394032781-nc6vkpsg3vor6u3lnn3b285os68lf737.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eztruck.eztruckcustomer",
+            "certificate_hash": "6e836c9272fb862c7d6fde16af5418d8df9b796b"
+          }
+        },
+        {
+          "client_id": "184394032781-ac08bfc4sjqns3up1e291laqqk3qsao7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUF9hnE5Jh1yNp1rCUcqUssZhjln0J5J4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184394032781-ac08bfc4sjqns3up1e291laqqk3qsao7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

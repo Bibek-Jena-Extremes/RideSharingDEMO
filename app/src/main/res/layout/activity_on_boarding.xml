@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackground"
+    tools:context=".ActivityUtil.OnBoarding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_on_board"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager_boarding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:clipToPadding="false"
+                android:minHeight="250dp"
+                android:layout_weight="1"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"></androidx.viewpager.widget.ViewPager>
+
+            <com.eztruck.eztruckcustomer.CustomUtil.ExtensiblePageIndicator
+                android:id="@+id/flexibleIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_pager_boarding"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="0dp"
+                android:visibility="visible"
+                app:indicatorActiveColor="@color/pager_selected"
+                app:indicatorInactiveColor="@color/pager_unselected"
+                app:indicatorPadding="3dp"
+                app:indicatorRadius="2dp" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                android:id="@+id/txt_sign_up"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_stroked"
+                android:gravity="center"
+                android:text="@string/sign_up"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/normal_text_size"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+
+            <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                android:id="@+id/txt_login"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_submit"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_text_size"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

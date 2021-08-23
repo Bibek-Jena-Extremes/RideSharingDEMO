@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorBackground"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/menu_dark_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <com.google.android.gms.maps.MapView
+                   android:id="@+id/map_view"
+                   android:layout_width="match_parent"
+                   android:layout_height="250dp"></com.google.android.gms.maps.MapView>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:paddingStart="10dp"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                   android:paddingEnd="10dp"
+                   android:layout_height="50dp">
+
+                   <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentStart="true"
+                       android:layout_alignParentLeft="true"
+                       android:layout_centerVertical="true"
+                       android:textSize="@dimen/normal_text_size"
+                       android:textColor="?attr/colorNormal"
+                       android:text="@string/ride_fare"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+                   <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                       android:id="@+id/txt_ride_fare"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerVertical="true"
+                       android:textSize="@dimen/normal_text_size"
+                       android:textColor="?attr/colorTagline"
+                       android:text="Pkr 450"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+
+               </RelativeLayout>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="1px"
+                   android:background="@color/tagline"></TextView>
+
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:paddingStart="10dp"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                   android:paddingEnd="10dp"
+                   android:layout_height="50dp">
+
+                   <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentStart="true"
+                       android:layout_alignParentLeft="true"
+                       android:layout_centerVertical="true"
+                       android:textSize="@dimen/normal_text_size"
+                       android:textColor="?attr/colorNormal"
+                       android:text="@string/duration"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+                   <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                       android:id="@+id/txt_duration"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerVertical="true"
+                       android:textSize="@dimen/normal_text_size"
+                       android:textColor="?attr/colorTagline"
+                       android:text="30 min"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+
+               </RelativeLayout>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="1px"
+                   android:background="@color/tagline"></TextView>
+
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:paddingStart="10dp"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                   android:paddingEnd="10dp"
+                   android:layout_height="50dp">
+
+                   <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentStart="true"
+                       android:layout_alignParentLeft="true"
+                       android:layout_centerVertical="true"
+                       android:textSize="@dimen/normal_text_size"
+                       android:textColor="?attr/colorNormal"
+                       android:text="@string/distance"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+                   <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                       android:id="@+id/txt_distance"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerVertical="true"
+                       android:textSize="@dimen/normal_text_size"
+                       android:textColor="?attr/colorTagline"
+                       android:text="2 km"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+
+               </RelativeLayout>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="1px"
+                   android:background="@color/tagline"></TextView>
+
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:paddingStart="10dp"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                   android:paddingEnd="10dp"
+                   android:layout_height="50dp">
+
+                   <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentStart="true"
+                       android:layout_alignParentLeft="true"
+                       android:layout_centerVertical="true"
+                       android:textSize="@dimen/normal_text_size"
+                       android:textColor="?attr/colorNormal"
+                       android:text="@string/payment_method"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+                   <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                       android:id="@+id/txt_payment"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerVertical="true"
+                       android:textSize="@dimen/normal_text_size"
+                       android:textColor="?attr/colorTagline"
+                       android:text="Cash"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+
+               </RelativeLayout>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="1px"
+                   android:background="@color/tagline"></TextView>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:paddingStart="10dp"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                   android:paddingEnd="10dp"
+                   android:layout_height="100dp">
+
+
+                   <com.makeramen.roundedimageview.RoundedImageView
+                       android:id="@+id/image_captain"
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:layout_gravity="center_vertical"
+                       app:riv_corner_radius="15dp"
+                       android:scaleType="centerCrop"
+                       android:src="@drawable/app_icon"></com.makeramen.roundedimageview.RoundedImageView>
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="65dp"
+                       android:orientation="vertical"
+                       android:gravity="center_vertical"
+                       android:paddingStart="10dp"
+                       android:paddingLeft="10dp"
+                       android:layout_gravity="center_vertical">
+
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="top">
+
+
+                           <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                               android:id="@+id/txt_captain_name"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentLeft="true"
+                               android:layout_alignParentStart="true"
+                               android:textColor="?attr/colorNormal"
+                               android:textSize="@dimen/normal_text_size"
+                               android:text="Captain Name"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+
+                           <RatingBar
+                               android:id="@+id/rating_bar"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:rating="4.5"
+                               android:layout_alignParentRight="true"
+                               android:layout_alignParentEnd="true"
+                               style="@style/Widget.AppCompat.RatingBar.Small"
+                               ></RatingBar>
+
+                       </RelativeLayout>
+
+                       <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                           android:id="@+id/txt_car_detail"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="?attr/colorTagline"
+                           android:layout_marginTop="3dp"
+                           android:textSize="@dimen/tagline_text_size"
+                           android:text="White Toyota Corolla"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+                       <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                           android:id="@+id/txt_card_no"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="?attr/colorTagline"
+                           android:layout_marginTop="3dp"
+                           android:textSize="@dimen/tagline_text_size"
+                           android:text="FOP 123"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="1px"
+                   android:background="@color/tagline"></TextView>
+
+
+               <LinearLayout
+                   android:id="@+id/layout_problem"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:orientation="horizontal"
+                   android:paddingStart="10dp"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                   android:paddingEnd="10dp"
+                   android:gravity="center_vertical">
+
+                   <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/label_text_size"
+                       android:textColor="@color/colorSelectedFavouriteDay"
+                       android:text="@string/report_the_problem"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+
+       </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

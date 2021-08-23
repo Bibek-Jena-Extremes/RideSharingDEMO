@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:background="?attr/colorBackground"
+        android:gravity="center">
+
+
+        <ProgressBar
+            android:id="@+id/progressView"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gp_color="?attr/colorMenuBackground"
+            android:gp_duration="800"
+            android:gp_figure_padding="3dp"
+            android:gp_number_of_angles="20"
+            android:gp_type="triangle" />
+
+
+        <com.eztruck.eztruckcustomer.TextviewUtil.LabelTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/label_text_size"
+            android:textColor="?attr/colorLabel"
+            android:layout_marginTop="30dp"
+            android:text="@string/wait"></com.eztruck.eztruckcustomer.TextviewUtil.LabelTextview>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

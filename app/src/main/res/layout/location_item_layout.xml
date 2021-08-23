@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_location"
+        android:layout_width="match_parent"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="50dp">
+
+
+        <RelativeLayout
+            android:id="@+id/layout_from"
+            android:layout_width="35dp"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_location_pointer"
+                app:tint="?attr/colorNormal"></ImageView>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/layout_from"
+            android:layout_toEndOf="@+id/layout_from"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+
+            <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+                android:id="@+id/txt_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorNormal"
+                android:maxLines="1"
+                android:text="Lahore"
+                android:textSize="@dimen/normal_text_size"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+            <com.eztruck.eztruckcustomer.TextviewUtil.TaglineTextview
+                android:id="@+id/txt_from_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:textColor="?attr/colorTagline"
+                android:text="Sheikhupura - Faisalabad Road - Sheikhupura Pakistan"
+                android:textSize="@dimen/tagline_text_size"></com.eztruck.eztruckcustomer.TextviewUtil.TaglineTextview>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

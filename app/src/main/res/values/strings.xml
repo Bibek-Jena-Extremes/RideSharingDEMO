@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <color name="black_transparent">#3f000000</color>
+
+    <!--String for Error Messages-->
+
+    <string name="app_name">ezTruck Customer</string>
+    <string name="internet_not_available">Internet not available</string>
+
+    <!--String for Api Keys-->
+
+    <string name="google_map_key">AIzaSyCnvbN7us3xfPYN4bmQ5ti7cC8fjdUOFqA</string>
+
+    <!--String for General Messages-->
+
+    <string name="download_error">Error while downloading</string>
+    <string name="downloading">Downloading</string>
+    <string name="forgot">We just need your registered Email id to sent you \n password reset instructions</string>
+
+    <!--String for Toast Messages-->
+
+    <string name="update">Update</string>
+    <string name="email_empty">Email is empty</string>
+    <string name="password_empty">Password Empty</string>
+    <string name="empty_first_name">Empty First Name</string>
+    <string name="empty_last_name">Empty Last Name</string>
+    <string name="password_mis_match">Password did not match</string>
+
+    <!--String for Base Fragment-->
+
+    <string name="select_picture">Kindly select picture</string>
+
+    <!--String for Navigation Drawer-->
+
+    <string name="favourites">Favourite</string>
+    <string name="download">Download</string>
+    <string name="share">Share with friends</string>
+
+    <!--String for Menu Text-->
+
+    <string name="rate">Rate our app</string>
+    <string name="about_us">Privacy Policy</string>
+    <string name="using_camera">Using Camera</string>
+    <string name="using_gallery">Using Gallery</string>
+    <string name="picture_selector">Select Picture</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="reset">Reset</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="already_have_account">Already have an account ?</string>
+
+    <!--String for Place Holder-->
+
+    <string name="did_not_create_account">Don\'t have an account\t?</string>
+
+
+    <!--String for Onboarding Message-->
+
+
+    <string name="title_01">Cab Booking</string>
+    <string name="board_01">Book your cab online instantly</string>
+
+    <string name="title_02">Advance Booking</string>
+    <string name="board_02">User can schedule their booking</string>
+
+    <string name="title_03">Save Money</string>
+    <string name="board_03">It help to save money &amp; time</string>
+
+    <!--String for Permission Messages-->
+
+
+    <string name="external_storage_permission">It need Storage permission for app to work</string>
+
+
+    <!--String for Edit Text hint-->
+
+    <string name="read_phone_state_permission">It need network state permission for app to work</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="profile">Profile</string>
+    <string name="submit">Submit</string>
+    <string name="logout">Logout</string>
+    <string name="progress">Progress</string>
+
+    <!--String for HomeFragment screen-->
+
+    <string name="setting">Setting</string>
+    <string name="privacy_policy">App Privacy Policy</string>
+    <string name="loading_configuration">Loading</string>
+    <string name="review_dialog">How would you rate the captain ?</string>
+    <string name="report_dialog">Kindly write which thing is not\nappropriate in this ride ?</string>
+    <string name="write_your_review_hint">Kindly write your reviews in given box</string>
+
+    <!--String for Facebook App Id-->
+
+    <string name="facebook_app_id">441312783974268</string>
+    <string name="fb_login_protocol_scheme">fb_login_protocol_scheme</string>
+
+
+    <!--String for Live Wallpaper-->
+
+
+    <string name="downloading_tagline">Downloading</string>
+    <string name="need_camera_permission">It need camera permission for app to run</string>
+    <string name="coupon_code_tagline">Write Coupon Code</string>
+    <string name="schedule_order">Schedule</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="card_holder_name">Cardholder Name</string>
+    <string name="card_number">Card Number</string>
+    <string name="cvv">CVV</string>
+    <string name="done">Done</string>
+    <string name="enter_detail">Enter your Credit Card Details</string>
+    <string name="successfully_added">Successfully Added !</string>
+    <string name="try_again">Try Again !</string>
+    <string name="expiry_month">MM (06)</string>
+    <string name="expire_year">YY (19)</string>
+    <string name="fill_holder_name">Kindly fill holder name</string>
+    <string name="fill_card_no">Kindly fill card number</string>
+    <string name="fill_expiry_month">Kinldy fill month expiry</string>
+    <string name="fill_expiry_year">Kindly fill year expiry</string>
+    <string name="fill_cvv">Kindly fill cvv</string>
+    <string name="validate_card">Invalid Card Number</string>
+    <string name="validate_cvc">invalid CVC</string>
+    <string name="validate_expiry_date">Invalid Expiry Date</string>
+    <string name="validate_expiry_month">Invalid Expiry Month</string>
+    <string name="order">Done</string>
+    <string name="wait">Kindly wait...</string>
+
+    <string name="phone_authentication">Authenticate Your Phone</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="verify">Verify Phone</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="email_phone">Empty Phone</string>
+    <string name="upload_picture">Upload Picture</string>
+    <string name="upload_picture_tagline">Kindly add the pictures</string>
+    <string name="picture_uploader">Picture Uploader</string>
+
+    <string name="my_order_history">History</string>
+    <string name="search_location">Search Location</string>
+    <string name="no_order">No Order Found</string>
+    <string name="no_order_tagline">Currently you did not make any order</string>
+    <string name="important_notice">Important Notice</string>
+    <string name="cart_important_notice">Make sure , you want to cancel the Ride ?</string>
+    <string name="cancel">Cancel</string>
+    <string name="track_rider">Track Rider</string>
+    <string name="chatting">Chatting</string>
+    <string name="write_message">Type a message</string>
+    <string name="typing_tagline">is typing ......</string>
+    <string name="password_email_to_yuo">Password email to you</string>
+    <string name="confirm_pickup">Confirm Pickup</string>
+    <string name="ride_type_business">Business</string>
+    <string name="add_drop_off">Add Drop Off</string>
+    <string name="let_start">Let\'s Start</string>
+    <string name="cash">Cash</string>
+    <string name="promo">Promo</string>
+    <string name="select_pick_up_location">Select Pick Up Location</string>
+    <string name="select_drop_off_location">Select Drop Off Location</string>
+    <string name="let_start_ride">Start Ride</string>
+    <string name="recent_location">Recent Locations</string>
+    <string name="nearby_location">Nearby Location</string>
+    <string name="select_location_from_map">Select Location From Map</string>
+    <string name="where_do_you_want_to_go">Where do you want to go ?</string>
+    <string name="select_drop_off_location_message">Kindly select drop off location</string>
+    <string name="search_result">Search Result</string>
+    <string name="select_city">Select City</string>
+    <string name="add_billing">Add Card</string>
+    <string name="book_ride">Booking</string>
+    <string name="ride_history">Ride History</string>
+    <string name="ride_fare">Ride Fare</string>
+    <string name="duration">Duration</string>
+    <string name="distance">Distance</string>
+    <string name="payment_method">Payment</string>
+    <string name="report_the_problem">Report the Problem</string>
+    <string name="ride_detail">Ride Detail</string>
+    <string name="your_rides">Your Rides</string>
+    <string name="current_ride">Current Ride</string>
+    <string name="no_ride_in_progress">Currently no ride is in progress</string>
+    <string name="label_name">Name</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_mobile">Mobile No.</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="updated_successfully">Updated Successfully</string>
+    <string name="incorrect_current_password">Incorrect current password</string>
+    <string name="incorrect_both_password"><![CDATA[Incorrect new & confirm password]]></string>
+    <string name="app_setting">App Settings</string>
+    <string name="no_ride_available">Currently no ride available right now</string>
+    <string name="we_did_not_operate_area">We did not operate in selected area</string>
+    <string name="order_cancel">Order Cancel</string>
+    <string name="ride_scheduled_successfully">Ride Scheduled Successfully</string>
+    <string name="check_ride">Checking Ride</string>
+
+
+</resources>

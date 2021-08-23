@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityUtil.FromLocationSelector">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorBackground"
+        android:orientation="vertical">
+
+
+        <include
+            layout="@layout/menu_dark_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                android:src="@drawable/ic_search"
+                app:tint="?attr/colorTintColourFull" />
+
+            <com.eztruck.eztruckcustomer.EditTextUtil.NormalEditText
+                android:id="@+id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="?attr/colorBackground"
+                android:textColor="?attr/colorNormal"
+                android:hint="@string/search_location"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/image_close"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:padding="13dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_close"
+                android:tint="?attr/colorHeading"></ImageView>
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_categories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_weight="1"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"></androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ProgressBar
+        android:id="@+id/progressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gp_color="?attr/colorMenuBackground"
+        android:gp_duration="800"
+        android:gp_figure_padding="3dp"
+        android:gp_number_of_angles="20"
+        android:gp_type="triangle" />
+
+
+
+</RelativeLayout>

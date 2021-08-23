@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/layout_add_card"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:background="?attr/colorBackgroundLight"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_add"
+            android:padding="2dp"
+            app:tint="?attr/colorTintColourFull"></ImageView>
+
+
+        <com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorNormal"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/add_new_card"
+            android:textSize="@dimen/normal_text_size"></com.eztruck.eztruckcustomer.TextviewUtil.NormalTextview>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
